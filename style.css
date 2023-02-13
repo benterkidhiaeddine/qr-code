@@ -42,11 +42,12 @@ footer {
     border-radius: 12px;
 }
 
-.qr-code-container > div {
+.qr-code-container > *
+ {
     width : 300px;
 }
 
-.qr-code-container > div:nth-child(2){
+.qr-code-container > h1:nth-child(2){
     font-size: 20px;
     font-weight: 700;
 }
@@ -57,14 +58,35 @@ footer {
 }
 
 
-@media  screen and (max-width : 500px) {
-    
-    
-    
+@media  screen and (max-width : 500px)  and (min-width:300px){
     
 
     footer{
         font-size: 12px;
+    }
+   
+
+
+}
+
+
+@media  screen and (max-width : 300px) {
+    
+    .qr-code-container > img {
+        height : 200px ;
+        width : 200px;
+        border-radius: 12px;
+    }
+    
+    .qr-code-container > *
+     {
+        width : 200px;
+    }
+    
+
+
+    footer{
+        font-size: 10px;
     }
    
 
